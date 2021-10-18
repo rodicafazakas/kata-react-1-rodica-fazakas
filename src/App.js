@@ -1,17 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Circle from './Circle';
+import Circle from './Circle.js';
 
 function App() {
+  const numbers = [1,2,3,4,5];
   return (
-    <>
-    <Circle></Circle>
-    <Circle></Circle>
-    <Circle></Circle>
-    <Circle></Circle>
-    <Circle></Circle>
-</>
+      <>   
+        { numbers.map( number => (<Circle key={number}> </Circle>) )  }
+      </>
   );
-}
+};
 
 export default App;
